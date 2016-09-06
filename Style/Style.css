@@ -132,6 +132,11 @@ body {
       margin-bottom: 20px;
       color: #f4511e;
   }
+
+  *.fa {
+      color: #f4511e;
+  }
+
   .slideanim {visibility:hidden;}
   .slide {
       animation-name: slide;
