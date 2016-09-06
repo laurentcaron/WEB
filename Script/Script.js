@@ -9,7 +9,9 @@ function initialize() {
     mapTypeId:google.maps.MapTypeId.ROADMAP
   };
 
-  var map = new google.maps.Map(mapProp);
+  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+
   var marker = new google.maps.Marker({ position:myCenter });
 
   marker.setMap(map);
