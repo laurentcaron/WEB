@@ -10,7 +10,6 @@ function initialize() {
   };
 
   var map = new google.maps.Map(mapProp);
-
   var marker = new google.maps.Marker({ position:myCenter });
 
   marker.setMap(map);
