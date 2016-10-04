@@ -37,6 +37,11 @@ body {
       color: #f4511e;
       font-size: 200px;
   }
+
+  .projects {
+      width: 50%;
+  }
+
   .thumbnail {
       padding: 0 0 15px 0;
       border: none;
@@ -47,6 +52,17 @@ body {
       height: 100%;
       margin-bottom: 10px;
   }
+
+  #ZVSE {
+    width: 700px;
+    height: 300px;
+  }
+
+  #robot {
+    width: 400px;
+    height: 350px;
+  }
+
   .carousel-control.right, .carousel-control.left {
       background-image: none;
       color: #f4511e;
