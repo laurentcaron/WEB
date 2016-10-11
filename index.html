@@ -9,9 +9,6 @@
     <link href="fonts/Lato.css" rel="stylesheet" type="text/css">
 	  <link rel="stylesheet" href="Style/Style.css">
     <link rel="stylesheet" href="Style/font-awesome.min.css">
-	  <script src="Script/jquery.min.js"></script>
-    <script src="Script/bootstrap.min.js"></script>
-    <script src="Script/Script.js"></script>
 	  <link rel="shortcut icon" href="Images/Logo.png">
   </head>
 
@@ -150,22 +147,30 @@
 		<p><span class="glyphicon glyphicon-phone"></span> (438) 884-2646</p>
 		<p><span class="glyphicon glyphicon-envelope"></span> laurent.caron@polymtl.ca</p>
 		</div>
+    <form role="form" id="contact-form" class="collapse in" aria-expanded="true">
+    <input type="text" id="gotcha" class="hidden">
 		<div class="col-sm-7 slideanim">
-		<div class="row">
-			<div class="col-sm-6 form-group">
-			<input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-			</div>
-			<div class="col-sm-6 form-group">
-			<input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-			</div>
+		  <div class="row">
+			   <div class="col-sm-6 form-group">
+			   <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+			   </div>
+			   <div class="col-sm-6 form-group">
+			   <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+			   </div>
+		  </div>
+		  <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea><br>
+		  <div class="row">
+			   <div class="col-sm-12 form-group">
+			   <button class="btn btn-default pull-right" type="submit" id="send">Send</button>
+			   </div>
+		  </div>
 		</div>
-		<textarea class="form-control" id="comments" name="comments" placeholder="Currently not working" rows="5"></textarea><br>
-		<div class="row">
-			<div class="col-sm-12 form-group">
-			<button class="btn btn-default pull-right" type="submit">Send</button>
-			</div>
-		</div>
-		</div>
+    </form>
+    <div class="row">
+       <div id="feedback" class="form control" style="display: none !important">
+          <p>Thank you for sending me a message! I will answer you as quickly as we can.</p> - Laurent Caron
+       </div>
+    </div>
 	</div>
 	</div>
 
@@ -178,6 +183,11 @@
   <a href="https://ca.linkedin.com/in/laurent-caron-779057113?trk=nav_responsive_tab_profile_pic"><i class="fa fa-linkedin-square fa-2x footer-glyph"></i></a>
   <a href="https://github.com/laurentcaron"><i class="fa fa-github-square fa-2x footer-glyph"></i></a>
 	</footer>
+
+  <script src="Script/jquery.min.js"></script>
+  <script src="Script/bootstrap.min.js"></script>
+  <script src="Script/Script.js"></script>
+  <script src="Script/send-email.js"></script>
 
   </body>
 </html>
